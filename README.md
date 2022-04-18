@@ -1,7 +1,7 @@
 # Install ArgoCD
-kubectl --kubeconfig=C:/Users/minas/.kube/kubeconfig create namespace argocd
-kubectl --kubeconfig=C:/Users/minas/.kube/kubeconfig apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.3.3/manifests/install.yaml
-## wait 5 min
-kubectl --kubeconfig=C:/Users/minas/.kube/kubeconfig delete all --all -n argocd
-## wait 5 min or create argocd-initial-admin-secret secret
-kubectl --kubeconfig=C:/Users/minas/.kube/kubeconfig apply -n argocd -f https://raw.githubusercontent.com/m-minasyan/argocd-arm64/main/install.yml
+1. kubectl --kubeconfig="kubeconfig path" create namespace argocd
+2. kubectl --kubeconfig="kubeconfig path" apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.3.3/manifests/install.yaml
+3. wait 5 min
+4. kubectl --kubeconfig="kubeconfig path" delete all --all -n argocd
+5. wait 5 min or create argocd-initial-admin-secret secret
+6. kubectl --kubeconfig="kubeconfig path" apply -n argocd -f https://raw.githubusercontent.com/m-minasyan/argocd-arm64/main/install.yml
